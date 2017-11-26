@@ -24,6 +24,44 @@ class App extends Component {
   getChartData(){
     // Ajax calls here
     this.setState({
+      chartBookingData:{
+        labels: ['Flights', 'Hotels', 'Cars'],
+        datasets:[
+          {
+            label:'Population',
+            data:[
+              25,
+              40,
+              35
+            ],
+            backgroundColor:[
+              'rgba(255, 99, 132, 0.6)',
+              'rgba(54, 162, 235, 0.6)',
+              'rgba(255, 206, 86, 0.6)',
+              'rgba(255, 99, 132, 0.6)'
+            ]
+          }
+        ]
+      },
+      chartRevenueDataData:{
+        labels: ['Flights', 'Hotels', 'Cars'],
+        datasets:[
+          {
+            label:'Population',
+            data:[
+              60,
+              25,
+              15
+            ],
+            backgroundColor:[
+              'rgba(255, 99, 132, 0.6)',
+              'rgba(54, 162, 235, 0.6)',
+              'rgba(255, 206, 86, 0.6)',
+              'rgba(255, 99, 132, 0.6)'
+            ]
+          }
+        ]
+      },
       flightData:{
         labels: ['SFO', 'LHR', 'DXB', 'BOM', 'LAX', 'DEL', 'NYC', 'ABD','SJC', 'ORD'],
         datasets:[
@@ -96,7 +134,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
 
-        <Chart carData={this.state.carData} flightData={this.state.flightData}  legendPosition="bottom"/>
+        <Chart chartBookingData={this.state.chartBookingData} chartRevenueDataData={this.state.chartRevenueDataData}  legendPosition="bottom"/>
         <FlightChart carData={this.state.carData} flightData={this.state.flightData}  legendPosition="bottom"/>
         <CarChart carData={this.state.carData} flightData={this.state.flightData}  legendPosition="bottom"/>
         <HotelChart carData={this.state.carData} flightData={this.state.flightData}  legendPosition="bottom"/>

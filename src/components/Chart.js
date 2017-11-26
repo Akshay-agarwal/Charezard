@@ -1,12 +1,12 @@
   import React, {Component} from 'react';
-  import {Bar, Line, Pie} from 'react-chartjs-2';
+  import {Doughnut} from 'react-chartjs-2';
 
   class Chart extends Component{
     constructor(props){
       super(props);
       this.state = {
-        carData:props.carData,
-        flightData:props.flightData
+        chartBookingData:props.chartBookingData,
+        chartRevenueDataData:props.chartRevenueDataData
 
       }
     }
@@ -22,16 +22,16 @@
         <div className="chart">
           <div className="container">
             <div className="row">
-              <div className="col-md-4">
-                <Bar
-                  data={this.state.flightData}
-                  width={50}
-                  height={50}
+              <div className="col-md-6">
+                <Doughnut
+                  data={this.state.chartBookingData}
+                  width={100}
+                  height={100}
                   options={{
                     title:{
                     display:this.props.displayTitle,
-                    text:'No of Flights per week',
-                    fontSize:12
+                    text:'% Different Types of Bookings',
+                    fontSize:20
                   },
                   legend:{
                     display:this.props.displayLegend,
@@ -40,34 +40,16 @@
                 }}
                 />
               </div>
-              <div className="col-md-4">
-                <Line
-                  data={this.state.carData}
-                  width={50}
-                  height={50}
+              <div className="col-md-6">
+                <Doughnut
+                  data={this.state.chartRevenueDataData}
+                  width={100}
+                  height={100}
                   options={{
                     title:{
                     display:this.props.displayTitle,
-                    text:'Largest Cities In ',
-                    fontSize:12
-                  },
-                  legend:{
-                    display:this.props.displayLegend,
-                    position:this.props.legendPosition
-                  }
-                }}
-              />
-              </div>
-              <div className="col-md-4">
-                <Pie
-                  data={this.state.carData}
-                  width={50}
-                  height={50}
-                  options={{
-                    title:{
-                    display:this.props.displayTitle,
-                    text:'Largest Cities In ',
-                    fontSize:12
+                    text:'% Revenue From Different Booking Types',
+                    fontSize:20
                   },
                   legend:{
                     display:this.props.displayLegend,
