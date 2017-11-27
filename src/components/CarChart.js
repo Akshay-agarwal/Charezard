@@ -1,28 +1,28 @@
 import React, {Component} from 'react';
-import {Bar, Line, Pie} from 'react-chartjs-2';
+import {Bar, Line, Pie, HorizontalBar} from 'react-chartjs-2';
 
 class CarChart extends Component{
   constructor(props){
     super(props);
     this.state = {
-      novFlightBookings:props.novFlightBookings,
-      flightData:props.flightData
-
-    }
+      carData:props.carData,
+      novCarBookings:props.novCarBookings,
+      carCompanyData:props.carCompanyData,
+      revenueCarRental:props.revenueCarRental
   }
-
+  
   static defaultProps = {
     displayTitle:true,
     displayLegend: true,
     legendPosition:'right'
   }
-
+  
   render(){
     return (
       <div className="chart">
         <div className="container">
           <div className="row">
-            <div className="col-sm-6">
+            <div className="col-lg-6">
               <Bar
                 data={this.state.flightData}
                 width={70}
@@ -31,7 +31,7 @@ class CarChart extends Component{
                   title:{
                     display:this.props.displayTitle,
                     text:'Most Popular Airports',
-                    fontSize:12
+                    fontSize:15
                   },
                   legend:{
                     display:this.props.displayLegend,
@@ -40,7 +40,7 @@ class CarChart extends Component{
                 }}
               />
             </div>
-            <div className="col-sm-6">
+            <div className="col-lg-6">
               <Line
                 data={this.state.novFlightBookings}
                 width={70}
@@ -48,8 +48,8 @@ class CarChart extends Component{
                 options={{
                   title:{
                     display:this.props.displayTitle,
-                    text:'Largest Cities In ',
-                    fontSize:12
+                    text:'Tickets Sold in November ',
+                    fontSize:15
                   },
                   legend:{
                     display:this.props.displayLegend,
@@ -61,15 +61,15 @@ class CarChart extends Component{
           </div>
           <div className="row">
             <div className="col-sm-6">
-              <Pie
-                data={this.state.carData}
+              <Bar
+                data={this.state.airlineData}
                 width={70}
                 height={70}
                 options={{
                   title:{
                     display:this.props.displayTitle,
-                    text:'Largest Cities In ',
-                    fontSize:12
+                    text:'Most Popular Airlines',
+                    fontSize:15
                   },
                   legend:{
                     display:this.props.displayLegend,
@@ -78,16 +78,16 @@ class CarChart extends Component{
                 }}
               />
             </div>
-            <div className="col-sm-6">
+            <div className="col-lg-6">
               <Pie
-                data={this.state.carData}
+                data={this.state.revenueAirline}
                 width={70}
                 height={70}
                 options={{
                   title:{
                     display:this.props.displayTitle,
-                    text:'Largest Cities In ',
-                    fontSize:12
+                    text:'Airline wise revenue ',
+                    fontSize:15
                   },
                   legend:{
                     display:this.props.displayLegend,
@@ -96,6 +96,7 @@ class CarChart extends Component{
                 }}
               />
             </div>
+          
           </div>
         </div>
       </div>

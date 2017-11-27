@@ -49,7 +49,7 @@ class FlightChart extends Component{
                                 options={{
                                     title:{
                                         display:this.props.displayTitle,
-                                        text:'Tickets Sold in November ',
+                                        text:'Tickets Sold in November(Number) ',
                                         fontSize:15
                                     },
                                     legend:{
@@ -87,7 +87,7 @@ class FlightChart extends Component{
                             options={{
                               title:{
                                 display:this.props.displayTitle,
-                                text:'Airline wise revenue ',
+                                text:'Airline wise revenue(K) ',
                                 fontSize:15
                               },
                               legend:{
