@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
-import {Bar, Line, Pie} from 'react-chartjs-2';
+import {Bar, Line, Pie, HorizontalBar} from 'react-chartjs-2';
 
 class FlightChart extends Component{
     constructor(props){
         super(props);
         this.state = {
           novFlightBookings:props.novFlightBookings,
-          flightData:props.flightData
-
+          flightData:props.flightData,
+          airlineData:props.airlineData
         }
     }
 
@@ -61,8 +61,8 @@ class FlightChart extends Component{
                     </div>
                     <div className="row">
                         <div className="col-sm-6">
-                            <Pie
-                                data={this.state.carData}
+                            <Bar
+                                data={this.state.airlineData}
                                 width={70}
                                 height={70}
                                 options={{

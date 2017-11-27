@@ -14,7 +14,8 @@ class App extends Component {
       chartRevenueData:{},
       carData:{},
       flightData:{},
-      novFlightBookings:{}
+      novFlightBookings:{},
+      airlineData:{}
     }
   }
 
@@ -100,7 +101,6 @@ class App extends Component {
         ]
       },
 
-
       novFlightBookings:{
         labels: ['5', '10', '15', '20', '25', '30'],
         datasets:[
@@ -115,17 +115,47 @@ class App extends Component {
               90
             ],
             backgroundColor:[
+              'rgba(153, 102, 255, 0.6)',
+            ]
+          }
+        ]
+      },
+
+      airlineData:{
+        labels: ['Air India', 'United', 'Delta', 'Ethihad', 'SouthWest', 'Emirates', 'Air China', 'British','Lufthansa', 'ORD'],
+        datasets:[
+          {
+            label:'Airlines',
+            data:[
+              120,
+              108,
+              98,
+              92,
+              88,
+              76,
+              64,
+              55,
+              50,
+              40,
+              32
+            ],
+            backgroundColor:[
               'rgba(255, 99, 132, 0.6)',
               'rgba(54, 162, 235, 0.6)',
               'rgba(255, 206, 86, 0.6)',
               'rgba(75, 192, 192, 0.6)',
               'rgba(153, 102, 255, 0.6)',
               'rgba(255, 159, 64, 0.6)',
-              'rgba(255, 99, 132, 0.6)'
+              'rgba(255, 192, 64, 0.6)',
+              'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 55, 0.6)',
+              'rgba(255, 192, 64, 0.6)',
+              'rgba(255, 192, 64, 0.6)',
+              'rgba(123, 192, 64, 0.6)'
             ]
           }
         ]
-      }
+      },
 
     });
 
@@ -136,13 +166,21 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
         </div>
 
-        <Chart chartBookingData={this.state.chartBookingData} chartRevenueDataData={this.state.chartRevenueDataData}  legendPosition="bottom"/>
-        <FlightChart novFlightBookings={this.state.novFlightBookings} flightData={this.state.flightData}  legendPosition="bottom"/>
-        <CarChart novFlightBookings={this.state.novFlightBookings} flightData={this.state.flightData}  legendPosition="bottom"/>
-        <HotelChart novFlightBookings={this.state.novFlightBookings} flightData={this.state.flightData}  legendPosition="bottom"/>
+        <Chart chartBookingData={this.state.chartBookingData}
+               chartRevenueDataData={this.state.chartRevenueDataData}
+               legendPosition="bottom"/>
+        <FlightChart novFlightBookings={this.state.novFlightBookings}
+                     flightData={this.state.flightData}
+                     airlineData={this.state.airlineData}
+                     legendPosition="bottom"/>
+        <CarChart novFlightBookings={this.state.novFlightBookings}
+                  flightData={this.state.flightData}
+                  legendPosition="bottom"/>
+        <HotelChart novFlightBookings={this.state.novFlightBookings}
+                    flightData={this.state.flightData}
+                    legendPosition="bottom"/>
       </div>
     );
   }
