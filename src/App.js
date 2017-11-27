@@ -254,21 +254,16 @@ class App extends Component {
       },
       
       carCompanyData:{
-        labels: ['Air India', 'United', 'Delta', 'Ethihad', 'SouthWest', 'Emirates', 'Air China', 'British','Lufthansa'],
+        labels: ['Enterprise', 'Hertz', 'National', 'Avis', 'Budget'],
         datasets:[
           {
-            label:'Airlines',
+            label:'Rental Company',
             data:[
-              720,
-              608,
-              598,
-              592,
-              488,
-              426,
-              364,
-              325,
-              250,
-              120
+              1346,
+              1008,
+              870,
+              692,
+              320
             ],
             backgroundColor:[
               'rgba(255, 99, 132, 0.6)',
@@ -276,12 +271,6 @@ class App extends Component {
               'rgba(255, 206, 86, 0.6)',
               'rgba(75, 192, 192, 0.6)',
               'rgba(153, 102, 255, 0.6)',
-              'rgba(255, 159, 64, 0.6)',
-              'rgba(255, 192, 64, 0.6)',
-              'rgba(153, 102, 255, 0.6)',
-              'rgba(255, 159, 55, 0.6)',
-              'rgba(255, 192, 64, 0.6)',
-              'rgba(255, 192, 64, 0.6)',
               'rgba(123, 192, 64, 0.6)'
             ]
           }
@@ -289,22 +278,16 @@ class App extends Component {
       },
   
       revenueCarRental:{
-        labels: ['Air India', 'United', 'Delta', 'Ethihad', 'SouthWest', 'Emirates', 'Air China', 'British','Lufthansa'],
+        labels: ['Enterprise', 'Hertz', 'National', 'Avis', 'Budget'],
         datasets:[
           {
             label:'Airports',
             data:[
-              190,
-              156,
-              92,
-              123,
-              77,
-              90,
-              50,
+              56,
+              48,
               40,
-              30,
-              40,
-        
+              26,
+              20
             ],
             backgroundColor:[
               'rgba(255, 99, 132, 0.6)',
@@ -312,11 +295,6 @@ class App extends Component {
               'rgba(255, 206, 86, 0.6)',
               'rgba(75, 192, 192, 0.6)',
               'rgba(153, 102, 255, 0.6)',
-              'rgba(255, 159, 64, 0.6)',
-              'rgba(255, 192, 64, 0.6)',
-              'rgba(153, 102, 255, 0.6)',
-              'rgba(255, 159, 55, 0.6)',
-              'rgba(255, 192, 64, 0.6)',
               'rgba(255, 99, 132, 0.6)'
             ]
           }
