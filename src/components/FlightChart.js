@@ -7,7 +7,8 @@ class FlightChart extends Component{
         this.state = {
           novFlightBookings:props.novFlightBookings,
           flightData:props.flightData,
-          airlineData:props.airlineData
+          airlineData:props.airlineData,
+          revenueAirline:props.revenueAirline
         }
     }
 
@@ -22,7 +23,7 @@ class FlightChart extends Component{
             <div className="chart">
                 <div className="container">
                     <div className="row">
-                        <div className="col-sm-6">
+                        <div className="col-lg-6">
                             <Bar
                                 data={this.state.flightData}
                                 width={70}
@@ -31,7 +32,7 @@ class FlightChart extends Component{
                                     title:{
                                         display:this.props.displayTitle,
                                         text:'Most Popular Airports',
-                                        fontSize:12
+                                        fontSize:15
                                     },
                                     legend:{
                                         display:this.props.displayLegend,
@@ -40,7 +41,7 @@ class FlightChart extends Component{
                                 }}
                             />
                         </div>
-                        <div className="col-sm-6">
+                        <div className="col-lg-6">
                             <Line
                                 data={this.state.novFlightBookings}
                                 width={70}
@@ -48,8 +49,8 @@ class FlightChart extends Component{
                                 options={{
                                     title:{
                                         display:this.props.displayTitle,
-                                        text:'Largest Cities In ',
-                                        fontSize:12
+                                        text:'Tickets Sold in November ',
+                                        fontSize:15
                                     },
                                     legend:{
                                         display:this.props.displayLegend,
@@ -68,8 +69,8 @@ class FlightChart extends Component{
                                 options={{
                                     title:{
                                         display:this.props.displayTitle,
-                                        text:'Largest Cities In ',
-                                        fontSize:12
+                                        text:'Most Popular Airlines',
+                                        fontSize:15
                                     },
                                     legend:{
                                         display:this.props.displayLegend,
@@ -78,24 +79,25 @@ class FlightChart extends Component{
                                 }}
                             />
                         </div>
-                        <div className="col-sm-6">
-                            <Pie
-                                data={this.state.carData}
-                                width={70}
-                                height={70}
-                                options={{
-                                    title:{
-                                        display:this.props.displayTitle,
-                                        text:'Largest Cities In ',
-                                        fontSize:12
-                                    },
-                                    legend:{
-                                    display:this.props.displayLegend,
-                                    position:this.props.legendPosition
-                                }
+                        <div className="col-lg-6">
+                          <Pie
+                            data={this.state.revenueAirline}
+                            width={70}
+                            height={70}
+                            options={{
+                              title:{
+                                display:this.props.displayTitle,
+                                text:'Airline wise revenue ',
+                                fontSize:15
+                              },
+                              legend:{
+                                display:this.props.displayLegend,
+                                position:this.props.legendPosition
+                              }
                             }}
-                        />
-                      </div>
+                          />
+                        </div>
+                      
                     </div>
                 </div>
             </div>

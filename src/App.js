@@ -15,7 +15,8 @@ class App extends Component {
       carData:{},
       flightData:{},
       novFlightBookings:{},
-      airlineData:{}
+      airlineData:{},
+      revenueAirline:{}
     }
   }
 
@@ -73,14 +74,14 @@ class App extends Component {
             label:'Airports',
             data:[
               190,
-              156,
-              92,
+              166,
+              144,
               123,
-              77,
+              112,
               90,
-              50,
-              40,
-              30,
+              70,
+              59,
+              46,
               40,
 
             ],
@@ -122,22 +123,21 @@ class App extends Component {
       },
 
       airlineData:{
-        labels: ['Air India', 'United', 'Delta', 'Ethihad', 'SouthWest', 'Emirates', 'Air China', 'British','Lufthansa', 'ORD'],
+        labels: ['Air India', 'United', 'Delta', 'Ethihad', 'SouthWest', 'Emirates', 'Air China', 'British','Lufthansa'],
         datasets:[
           {
             label:'Airlines',
             data:[
-              120,
-              108,
-              98,
-              92,
-              88,
-              76,
-              64,
-              55,
-              50,
-              40,
-              32
+              720,
+              608,
+              598,
+              592,
+              488,
+              426,
+              364,
+              325,
+              250,
+              120
             ],
             backgroundColor:[
               'rgba(255, 99, 132, 0.6)',
@@ -152,6 +152,41 @@ class App extends Component {
               'rgba(255, 192, 64, 0.6)',
               'rgba(255, 192, 64, 0.6)',
               'rgba(123, 192, 64, 0.6)'
+            ]
+          }
+        ]
+      },
+  
+      revenueAirline:{
+        labels: ['Air India', 'United', 'Delta', 'Ethihad', 'SouthWest', 'Emirates', 'Air China', 'British','Lufthansa'],
+        datasets:[
+          {
+            label:'Airports',
+            data:[
+              190,
+              156,
+              92,
+              123,
+              77,
+              90,
+              50,
+              40,
+              30,
+              40,
+        
+            ],
+            backgroundColor:[
+              'rgba(255, 99, 132, 0.6)',
+              'rgba(54, 162, 235, 0.6)',
+              'rgba(255, 206, 86, 0.6)',
+              'rgba(75, 192, 192, 0.6)',
+              'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 64, 0.6)',
+              'rgba(255, 192, 64, 0.6)',
+              'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 55, 0.6)',
+              'rgba(255, 192, 64, 0.6)',
+              'rgba(255, 99, 132, 0.6)'
             ]
           }
         ]
@@ -174,6 +209,7 @@ class App extends Component {
         <FlightChart novFlightBookings={this.state.novFlightBookings}
                      flightData={this.state.flightData}
                      airlineData={this.state.airlineData}
+                     revenueAirline={this.state.revenueAirline}
                      legendPosition="bottom"/>
         <CarChart novFlightBookings={this.state.novFlightBookings}
                   flightData={this.state.flightData}
