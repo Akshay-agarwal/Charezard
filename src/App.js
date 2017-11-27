@@ -37,9 +37,9 @@ class App extends Component {
           {
             label:'Population',
             data:[
-              24,
+              21,
               44,
-              32
+              35
             ],
             backgroundColor:[
               'rgba(255, 99, 132, 0.6)',
@@ -70,131 +70,6 @@ class App extends Component {
       },
 
       // Data for flight Analytics is here
-      carData:{
-        labels: ['SFO', 'LHR', 'DXB', 'BOM', 'LAX', 'DEL', 'NYC', 'ABD','SJC', 'ORD'],
-        datasets:[
-          {
-            label:'Airports',
-            data:[
-              190,
-              166,
-              144,
-              123,
-              112,
-              90,
-              70,
-              59,
-              46,
-              40,
-
-            ],
-            backgroundColor:[
-              'rgba(255, 99, 132, 0.6)',
-              'rgba(54, 162, 235, 0.6)',
-              'rgba(255, 206, 86, 0.6)',
-              'rgba(75, 192, 192, 0.6)',
-              'rgba(153, 102, 255, 0.6)',
-              'rgba(255, 159, 64, 0.6)',
-              'rgba(255, 192, 64, 0.6)',
-              'rgba(153, 102, 255, 0.6)',
-              'rgba(255, 159, 55, 0.6)',
-              'rgba(255, 192, 64, 0.6)',
-              'rgba(255, 99, 132, 0.6)'
-            ]
-          }
-        ]
-      },
-
-      novCarBookings:{
-        labels: ['5', '10', '15', '20', '25', '30'],
-        datasets:[
-          {
-            label:'Days in November',
-            data:[
-              156,
-              92,
-              123,
-              77,
-              190,
-              90
-            ],
-            backgroundColor:[
-              'rgba(153, 102, 255, 0.6)',
-            ]
-          }
-        ]
-      },
-  
-      airlineData:{
-        labels: ['Air India', 'United', 'Delta', 'Ethihad', 'SouthWest', 'Emirates', 'Air China', 'British','Lufthansa'],
-        datasets:[
-          {
-            label:'Airlines',
-            data:[
-              720,
-              608,
-              598,
-              592,
-              488,
-              426,
-              364,
-              325,
-              250,
-              120
-            ],
-            backgroundColor:[
-              'rgba(255, 99, 132, 0.6)',
-              'rgba(54, 162, 235, 0.6)',
-              'rgba(255, 206, 86, 0.6)',
-              'rgba(75, 192, 192, 0.6)',
-              'rgba(153, 102, 255, 0.6)',
-              'rgba(255, 159, 64, 0.6)',
-              'rgba(255, 192, 64, 0.6)',
-              'rgba(153, 102, 255, 0.6)',
-              'rgba(255, 159, 55, 0.6)',
-              'rgba(255, 192, 64, 0.6)',
-              'rgba(255, 192, 64, 0.6)',
-              'rgba(123, 192, 64, 0.6)'
-            ]
-          }
-        ]
-      },
-  
-      revenueAirline:{
-        labels: ['Air India', 'United', 'Delta', 'Ethihad', 'SouthWest', 'Emirates', 'Air China', 'British','Lufthansa'],
-        datasets:[
-          {
-            label:'Airports',
-            data:[
-              190,
-              156,
-              92,
-              123,
-              77,
-              90,
-              50,
-              40,
-              30,
-              40,
-        
-            ],
-            backgroundColor:[
-              'rgba(255, 99, 132, 0.6)',
-              'rgba(54, 162, 235, 0.6)',
-              'rgba(255, 206, 86, 0.6)',
-              'rgba(75, 192, 192, 0.6)',
-              'rgba(153, 102, 255, 0.6)',
-              'rgba(255, 159, 64, 0.6)',
-              'rgba(255, 192, 64, 0.6)',
-              'rgba(153, 102, 255, 0.6)',
-              'rgba(255, 159, 55, 0.6)',
-              'rgba(255, 192, 64, 0.6)',
-              'rgba(255, 99, 132, 0.6)'
-            ]
-          }
-        ]
-      },
-  
   
       flightData:{
         labels: ['SFO', 'LHR', 'DXB', 'BOM', 'LAX', 'DEL', 'NYC', 'ABD','SJC', 'ORD'],
@@ -250,7 +125,134 @@ class App extends Component {
           }
         ]
       },
+      
+      airlineData:{
+        labels: ['Air India', 'United', 'Delta', 'Ethihad', 'SouthWest', 'Emirates', 'Air China', 'British','Lufthansa'],
+        datasets:[
+          {
+            label:'Airlines',
+            data:[
+              720,
+              608,
+              598,
+              592,
+              488,
+              426,
+              364,
+              325,
+              250,
+              120
+            ],
+            backgroundColor:[
+              'rgba(255, 99, 132, 0.6)',
+              'rgba(54, 162, 235, 0.6)',
+              'rgba(255, 206, 86, 0.6)',
+              'rgba(75, 192, 192, 0.6)',
+              'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 64, 0.6)',
+              'rgba(255, 192, 64, 0.6)',
+              'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 55, 0.6)',
+              'rgba(255, 192, 64, 0.6)',
+              'rgba(255, 192, 64, 0.6)',
+              'rgba(123, 192, 64, 0.6)'
+            ]
+          }
+        ]
+      },
   
+      revenueAirline:{
+        labels: ['Air India', 'United', 'Delta', 'Ethihad', 'SouthWest', 'Emirates', 'Air China', 'British','Lufthansa'],
+        datasets:[
+          {
+            label:'Airports',
+            data:[
+              190,
+              156,
+              142,
+              123,
+              77,
+              90,
+              50,
+              40,
+              30,
+              40,
+        
+            ],
+            backgroundColor:[
+              'rgba(255, 99, 132, 0.6)',
+              'rgba(54, 162, 235, 0.6)',
+              'rgba(255, 206, 86, 0.6)',
+              'rgba(75, 192, 192, 0.6)',
+              'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 64, 0.6)',
+              'rgba(255, 192, 64, 0.6)',
+              'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 55, 0.6)',
+              'rgba(255, 192, 64, 0.6)',
+              'rgba(255, 99, 132, 0.6)'
+            ]
+          }
+        ]
+      },
+      
+      
+      // Car Analytics Data
+      
+      carData:{
+        labels: ['Los Angeles', 'Las Vegas', 'Orlando', 'Seattle', 'New York', 'Dallas', 'San Francisco', 'Miami','Denver', 'San Jose'],
+        datasets:[
+          {
+            label:'Cities',
+            data:[
+              58,
+              53,
+              46,
+              40,
+              37,
+              32,
+              28,
+              24,
+              20,
+              17,
+            ],
+            backgroundColor:[
+              'rgba(255, 99, 132, 0.6)',
+              'rgba(54, 162, 235, 0.6)',
+              'rgba(255, 206, 86, 0.6)',
+              'rgba(75, 192, 192, 0.6)',
+              'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 64, 0.6)',
+              'rgba(255, 192, 64, 0.6)',
+              'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 55, 0.6)',
+              'rgba(255, 192, 64, 0.6)',
+              'rgba(255, 99, 132, 0.6)'
+            ]
+          }
+        ]
+      },
+  
+      novCarBookings:{
+        labels: ['5', '10', '15', '20', '25', '30'],
+        datasets:[
+          {
+            label:'Days in November',
+            data:[
+              199,
+              252,
+              191,
+              160,
+              303,
+              100
+            ],
+            backgroundColor:[
+              'rgba(153, 102, 255, 0.6)',
+            ]
+          }
+        ]
+      },
+      
       carCompanyData:{
         labels: ['Air India', 'United', 'Delta', 'Ethihad', 'SouthWest', 'Emirates', 'Air China', 'British','Lufthansa'],
         datasets:[
@@ -339,10 +341,10 @@ class App extends Component {
                      airlineData={this.state.airlineData}
                      revenueAirline={this.state.revenueAirline}
                      legendPosition="bottom"/>
-        <CarChart carData:{this.state.carData}
-                  novCarBookings:{this.state.novCarBookings}
-                  carCompanyData:{this.state.carCompanyData}
-                  revenueCarRental:{this.state.revenueCarRental}
+        <CarChart carData={this.state.carData}
+                  novCarBookings={this.state.novCarBookings}
+                  carCompanyData={this.state.carCompanyData}
+                  revenueCarRental={this.state.revenueCarRental}
                   legendPosition="bottom"/>
         <HotelChart novFlightBookings={this.state.novFlightBookings}
                     flightData={this.state.flightData}

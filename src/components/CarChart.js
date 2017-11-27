@@ -9,6 +9,7 @@ class CarChart extends Component{
       novCarBookings:props.novCarBookings,
       carCompanyData:props.carCompanyData,
       revenueCarRental:props.revenueCarRental
+    }
   }
   
   static defaultProps = {
@@ -24,13 +25,13 @@ class CarChart extends Component{
           <div className="row">
             <div className="col-lg-6">
               <Bar
-                data={this.state.flightData}
+                data={this.state.carData}
                 width={70}
                 height={70}
                 options={{
                   title:{
                     display:this.props.displayTitle,
-                    text:'Most Popular Airports',
+                    text:'Most Popular Cities for Car Rental',
                     fontSize:15
                   },
                   legend:{
@@ -42,13 +43,13 @@ class CarChart extends Component{
             </div>
             <div className="col-lg-6">
               <Line
-                data={this.state.novFlightBookings}
+                data={this.state.novCarBookings}
                 width={70}
                 height={70}
                 options={{
                   title:{
                     display:this.props.displayTitle,
-                    text:'Tickets Sold in November ',
+                    text:'Car Rentals in November(Number) ',
                     fontSize:15
                   },
                   legend:{
@@ -62,13 +63,13 @@ class CarChart extends Component{
           <div className="row">
             <div className="col-sm-6">
               <Bar
-                data={this.state.airlineData}
+                data={this.state.carCompanyData}
                 width={70}
                 height={70}
                 options={{
                   title:{
                     display:this.props.displayTitle,
-                    text:'Most Popular Airlines',
+                    text:'Most Popular Car Rental Companies',
                     fontSize:15
                   },
                   legend:{
@@ -80,13 +81,13 @@ class CarChart extends Component{
             </div>
             <div className="col-lg-6">
               <Pie
-                data={this.state.revenueAirline}
+                data={this.state.revenueCarRental}
                 width={70}
                 height={70}
                 options={{
                   title:{
                     display:this.props.displayTitle,
-                    text:'Airline wise revenue ',
+                    text:'Company wise revenue(K) ',
                     fontSize:15
                   },
                   legend:{

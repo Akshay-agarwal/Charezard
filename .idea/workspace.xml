@@ -5,7 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/CarChart.js" afterPath="$PROJECT_DIR$/src/components/CarChart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/FlightChart.js" afterPath="$PROJECT_DIR$/src/components/FlightChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Chart.js" afterPath="$PROJECT_DIR$/src/components/Chart.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,8 +22,8 @@
       <file leaf-file-name="Chart.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Chart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+            <state relative-caret-position="-354">
+              <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="26" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -34,8 +34,8 @@
       <file leaf-file-name="CarChart.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/CarChart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+            <state relative-caret-position="1009">
+              <caret line="71" column="59" lean-forward="false" selection-start-line="71" selection-start-column="59" selection-end-line="71" selection-end-column="59" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -56,8 +56,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-786">
-              <caret line="127" column="17" lean-forward="false" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
+            <state relative-caret-position="264">
+              <caret line="346" column="35" lean-forward="false" selection-start-line="346" selection-start-column="35" selection-end-line="346" selection-end-column="35" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -92,8 +92,8 @@
       <file leaf-file-name="FlightChart.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/FlightChart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="33" column="67" lean-forward="true" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
+            <state relative-caret-position="342">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -117,8 +117,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/components/HotelChart.js" />
-        <option value="$PROJECT_DIR$/src/components/Chart.js" />
         <option value="$PROJECT_DIR$/src/components/FlightChart.js" />
+        <option value="$PROJECT_DIR$/src/components/Chart.js" />
         <option value="$PROJECT_DIR$/src/components/CarChart.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
       </list>
@@ -217,12 +217,12 @@
       <option name="presentableId" value="Default" />
       <updated>1511724955318</updated>
       <workItem from="1511724956436" duration="1157000" />
-      <workItem from="1511726196286" duration="7919000" />
+      <workItem from="1511726196286" duration="9512000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9076000" />
+    <option name="totallyTimeSpent" value="10669000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -324,16 +324,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/HotelChart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1514">
@@ -344,20 +334,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Chart.js">
+    <entry file="file://$PROJECT_DIR$/src/components/FlightChart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        <state relative-caret-position="342">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/FlightChart.js">
+    <entry file="file://$PROJECT_DIR$/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="67" lean-forward="true" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-354">
+          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="26" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -366,8 +366,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/CarChart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        <state relative-caret-position="1009">
+          <caret line="71" column="59" lean-forward="false" selection-start-line="71" selection-start-column="59" selection-end-line="71" selection-end-column="59" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -376,8 +376,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-786">
-          <caret line="127" column="17" lean-forward="false" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
+        <state relative-caret-position="264">
+          <caret line="346" column="35" lean-forward="false" selection-start-line="346" selection-start-column="35" selection-end-line="346" selection-end-column="35" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
