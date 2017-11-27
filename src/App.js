@@ -13,7 +13,8 @@ class App extends Component {
       chartBookingData:{},
       chartRevenueData:{},
       carData:{},
-      flightData:{}
+      flightData:{},
+      novFlightBookings:{}
     }
   }
 
@@ -24,44 +25,46 @@ class App extends Component {
   getChartData(){
     // Ajax calls here
     this.setState({
+      // The Main Chart Data Goes here.
       chartBookingData:{
         labels: ['Flights', 'Hotels', 'Cars'],
         datasets:[
           {
             label:'Population',
             data:[
-              25,
-              40,
-              35
+              24,
+              44,
+              32
             ],
             backgroundColor:[
               'rgba(255, 99, 132, 0.6)',
               'rgba(54, 162, 235, 0.6)',
-              'rgba(255, 206, 86, 0.6)',
-              'rgba(255, 99, 132, 0.6)'
+              'rgba(255, 206, 86, 0.6)'
             ]
           }
         ]
       },
+
       chartRevenueDataData:{
         labels: ['Flights', 'Hotels', 'Cars'],
         datasets:[
           {
             label:'Population',
             data:[
-              60,
-              25,
-              15
+              62,
+              26,
+              12
             ],
             backgroundColor:[
               'rgba(255, 99, 132, 0.6)',
               'rgba(54, 162, 235, 0.6)',
-              'rgba(255, 206, 86, 0.6)',
-              'rgba(255, 99, 132, 0.6)'
+              'rgba(255, 206, 86, 0.6)'
             ]
           }
         ]
       },
+
+      // Data for flight Analytics is here
       flightData:{
         labels: ['SFO', 'LHR', 'DXB', 'BOM', 'LAX', 'DEL', 'NYC', 'ABD','SJC', 'ORD'],
         datasets:[
@@ -96,11 +99,13 @@ class App extends Component {
           }
         ]
       },
-      carData:{
-        labels: ['SFO', 'BOM', 'LAX', 'DEL', 'NYC', 'ABD'],
+
+
+      novFlightBookings:{
+        labels: ['5', '10', '15', '20', '25', '30'],
         datasets:[
           {
-            label:'Population',
+            label:'Days in November',
             data:[
               156,
               92,
@@ -135,9 +140,9 @@ class App extends Component {
         </div>
 
         <Chart chartBookingData={this.state.chartBookingData} chartRevenueDataData={this.state.chartRevenueDataData}  legendPosition="bottom"/>
-        <FlightChart carData={this.state.carData} flightData={this.state.flightData}  legendPosition="bottom"/>
-        <CarChart carData={this.state.carData} flightData={this.state.flightData}  legendPosition="bottom"/>
-        <HotelChart carData={this.state.carData} flightData={this.state.flightData}  legendPosition="bottom"/>
+        <FlightChart novFlightBookings={this.state.novFlightBookings} flightData={this.state.flightData}  legendPosition="bottom"/>
+        <CarChart novFlightBookings={this.state.novFlightBookings} flightData={this.state.flightData}  legendPosition="bottom"/>
+        <HotelChart novFlightBookings={this.state.novFlightBookings} flightData={this.state.flightData}  legendPosition="bottom"/>
       </div>
     );
   }
