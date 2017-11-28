@@ -350,7 +350,7 @@ class App extends Component {
               104,
               245,
               162,
-              100,
+              120,
               220,
               100
             ],
@@ -362,16 +362,21 @@ class App extends Component {
       },
   
       hotelCompanyData:{
-        labels: ['Enterprise', 'Hertz', 'National', 'Avis', 'Budget'],
+        labels: ['Bellagio', 'Mandalay', 'Aria', 'Monte Carlo', 'Marriott', 'Flamingo', 'Wynn', 'Vdara','Trump','Holiday'],
         datasets:[
           {
-            label:'Rental Company',
+            label:'Popular Hotels in LA',
             data:[
-              1346,
-              1008,
-              870,
-              692,
-              320
+              720,
+              608,
+              598,
+              592,
+              488,
+              426,
+              364,
+              325,
+              250,
+              120
             ],
             backgroundColor:[
               'rgba(255, 99, 132, 0.6)',
@@ -379,6 +384,12 @@ class App extends Component {
               'rgba(255, 206, 86, 0.6)',
               'rgba(75, 192, 192, 0.6)',
               'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 64, 0.6)',
+              'rgba(255, 192, 64, 0.6)',
+              'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 55, 0.6)',
+              'rgba(255, 192, 64, 0.6)',
+              'rgba(255, 192, 64, 0.6)',
               'rgba(123, 192, 64, 0.6)'
             ]
           }
@@ -386,16 +397,22 @@ class App extends Component {
       },
   
       revenueHotel:{
-        labels: ['Enterprise', 'Hertz', 'National', 'Avis', 'Budget'],
+        labels: ['Bellagio', 'Mandalay', 'Aria', 'Monte Carlo', 'Marriott', 'Flamingo', 'Wynn', 'Four Seasons','Trump International'],
         datasets:[
           {
-            label:'Airports',
+            label:'Hot Revenue in San Jose',
             data:[
-              56,
-              48,
+              190,
+              156,
+              142,
+              123,
+              77,
+              90,
+              50,
               40,
-              26,
-              20
+              30,
+              40,
+      
             ],
             backgroundColor:[
               'rgba(255, 99, 132, 0.6)',
@@ -403,6 +420,11 @@ class App extends Component {
               'rgba(255, 206, 86, 0.6)',
               'rgba(75, 192, 192, 0.6)',
               'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 64, 0.6)',
+              'rgba(255, 192, 64, 0.6)',
+              'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 55, 0.6)',
+              'rgba(255, 192, 64, 0.6)',
               'rgba(255, 99, 132, 0.6)'
             ]
           }
