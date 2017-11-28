@@ -7,7 +7,7 @@ class FlightChart extends Component{
         this.state = {
           novFlightBookings:props.novFlightBookings,
           flightData:props.flightData,
-          airlineData:props.airlineData,
+          airlineCompanyData:props.airlineCompanyData,
           revenueAirline:props.revenueAirline
         }
     }
@@ -63,7 +63,7 @@ class FlightChart extends Component{
                     <div className="row">
                         <div className="col-sm-6">
                             <Bar
-                                data={this.state.airlineData}
+                                data={this.state.airlineCompanyData}
                                 width={70}
                                 height={70}
                                 options={{
