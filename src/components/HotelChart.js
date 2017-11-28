@@ -31,7 +31,7 @@ class HotelChart extends Component{
                 options={{
                   title:{
                     display:this.props.displayTitle,
-                    text:'Most Popular Airports',
+                    text:'Most Popular Destinations',
                     fontSize:15
                   },
                   legend:{

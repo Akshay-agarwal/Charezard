@@ -308,7 +308,7 @@ class App extends Component {
       // Hotel Analytics Data
   
       hotelData:{
-        labels: ['Los Angeles', 'Las Vegas', 'Orlando', 'Seattle', 'New York', 'Dallas', 'San Francisco', 'Miami','Denver', 'San Jose'],
+        labels: ['Los Angeles', 'Las Vegas', 'Miami', 'Lake Tahoe', 'New York', 'Chicago', 'San Diego', 'Maui','Seattle', 'Portland'],
         datasets:[
           {
             label:'Cities',
