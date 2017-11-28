@@ -347,11 +347,11 @@ class App extends Component {
           {
             label:'Days in November',
             data:[
-              199,
-              252,
-              191,
-              160,
-              303,
+              104,
+              245,
+              162,
+              100,
+              220,
               100
             ],
             backgroundColor:[
